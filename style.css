@@ -9,9 +9,12 @@ body {
   width: 100vw;
 }
 
+.container-bg-color {
+  background: #fff;
+}
+
 .profile {
   /* bg */
-  background: #fff;
   border-bottom-left-radius: 80px;
   width: 100vw;
   background-image: url(./images/mobileheaderbg.svg);
@@ -67,7 +70,6 @@ body {
 
 header {
   width: 100vw;
-  background: #fff;
   display: flex;
   flex-direction: row;
 
