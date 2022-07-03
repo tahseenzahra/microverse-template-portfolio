@@ -21,6 +21,7 @@ body {
   background-image: url(./images/mobileheaderbg.svg);
   background-size: cover;
   background-repeat: no-repeat;
+
   /* position: absolute; */
 
   /* width: 462px; */
@@ -83,7 +84,8 @@ header {
   color: #6070ff;
 }
 
-.poppins-font {
+.poppins-font,
+.proj-title {
   font-family: 'Poppins', sans-serif;
 }
 
@@ -126,7 +128,6 @@ ul.no-bullets {
 .proj-title {
   width: 295px;
   height: 36px;
-  font-family: 'Poppins';
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -147,9 +148,10 @@ ul.no-bullets {
   line-height: 16px;
 }
 
-.proj-type, .proj-year {
+.proj-type,
+.proj-year {
   height: 16px;
-  color: #7A869A;
+  color: #7a869a;
 }
 
 .proj-name {
@@ -158,7 +160,8 @@ ul.no-bullets {
   color: #344563;
 }
 
-.proj-type::before, .proj-year::before {
+.proj-type::before,
+.proj-year::before {
   content: "";
   width: 8px;
   height: 8px;
@@ -186,7 +189,7 @@ ul.no-bullets {
 }
 
 .proj-list li {
-  background: #EBEBFF;
+  background: #ebebff;
   border-radius: 8px;
   padding: 4px 12px;
   font-style: normal;
@@ -194,7 +197,7 @@ ul.no-bullets {
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.03em;
-  color: #6070FF;
+  color: #6070ff;
 }
 
 .see-proj {
@@ -226,7 +229,6 @@ ul.no-bullets {
   padding: 114px 24px;
   gap: 12px;
   border-top-right-radius: 80px;
-
 }
 
 #myself-1stchild {
@@ -241,7 +243,7 @@ ul.no-bullets {
   flex-direction: column;
   padding: 12px;
   gap: 12px;
-    color: #000000;
+  color: #000;
 }
 
 .csLanguages li {
