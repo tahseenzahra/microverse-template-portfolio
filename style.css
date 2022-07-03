@@ -38,17 +38,11 @@ body {
 }
 
 #navbar-menu {
-  /* background-image: url(./images/hamburger.svg);
-  background-repeat: no-repeat; */
   margin-left: auto;
-
-  /* margin-right: 12px; */
   position: relative;
   top: 13px;
   padding-right: 36px;
   cursor: pointer;
-
-  /* align-items: center; */
 }
 
 .main-heading {
@@ -73,10 +67,6 @@ header {
   width: 100vw;
   display: flex;
   flex-direction: row;
-
-  /* padding: 12px 24px 26px 24px; */
-
-  /* justify-content: space-between; */
 }
 
 #logo {
@@ -89,11 +79,6 @@ header {
   padding: 24px;
   align-items: center;
   text-align: center;
-
-  /* identical to box height, or 111% */
-
-  /* display: flex;
- */
   text-decoration: none;
   color: #6070ff;
 }
@@ -139,17 +124,13 @@ ul.no-bullets {
 }
 
 .proj-title {
-  /* Project Title */
-
-
-width: 295px;
-height: 36px;
-
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 700;
-font-size: 32px;
-line-height: 44px;
+  width: 295px;
+  height: 36px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
 }
 
 .proj-about {
@@ -172,11 +153,9 @@ line-height: 44px;
 }
 
 .proj-name {
-/* Text */
-
-width: 55px;
-height: 16px;
-color: #344563;
+  width: 55px;
+  height: 16px;
+  color: #344563;
 }
 
 .proj-type::before, .proj-year::before {
@@ -190,37 +169,20 @@ color: #344563;
 }
 
 .proj-primarytxt {
-  /* width: 295px; */
-/* height: 76px; */
-
-/* Body / 3 */
-
-font-style: normal;
-font-weight: 400;
-font-size: 15px;
-line-height: 24px;
-/* or 160% */
-
-
-/* Neutrals/N600 */
-
-color: #344563;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #344563;
 }
 
 .proj-list {
-  /* background-color: ; */
   display: flex;
-flex-direction: row;
-gap: 8px;
-align-items: center;
-/* padding: 4px 12px; */
-
-width: 53px;
-height: 24px;
-
-/* Primary/B50 */
-
-
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  width: 53px;
+  height: 24px;
 }
 
 .proj-list li {
@@ -231,30 +193,14 @@ height: 24px;
   font-weight: 500;
   font-size: 12px;
   line-height: 16px;
-/* identical to box height, or 133% */
-
-letter-spacing: 0.03em;
-
-/* Primary/B400 */
-
-color: #6070FF;
+  letter-spacing: 0.03em;
+  color: #6070FF;
 }
 
 .see-proj {
-  /* font-style: normal;
-font-weight: 500;
-font-size: 17px;
-line-height: 24px;
-/* identical to box height, or 141% */
-
-/* display: flex; */
-align-items: center;
-text-align: center;
-letter-spacing: 0.03em;
-
-/* Primary/B500 */
-
-/* color: #396DF2; */
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 
 .button {
@@ -290,38 +236,22 @@ letter-spacing: 0.03em;
   gap: 12px;
 }
 
-.csLanguages{
-  /* font-style: normal;
-font-weight: 500;
-font-size: 20px;
-line-height: 24px;
- display: flex;
-flex-direction: column;
-justify-content: flex-start;
-align-items: center;  */
-
-display: flex;
-flex-direction: column;
-padding: 12px;
-gap: 12px;
-
-color: #000000;
+.csLanguages {
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  gap: 12px;
+    color: #000000;
 }
 
 .csLanguages li {
   font: inherit;
   font-style: normal;
-font-weight: 500;
-font-size: 15px;
-line-height: 20px;
-/* or 133% */
-
-/* display: flex; */
-align-items: center;
-
-/* Neutrals/N700 */
-
-color: #253858;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  align-items: center;
+  color: #253858;
 }
 
 .CS-list-items {
@@ -336,9 +266,9 @@ color: #253858;
 
 .arrowhead {
   border: solid #406d98;
-    border-width: 0 2px 2px 0;
-    display: inline-block;
-    padding: 4px;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 4px;
 }
 
 .down-direction {
@@ -352,7 +282,7 @@ color: #253858;
 }
 
 .arrow-margin {
-  padding-left: auto;
+  padding-left: 100%;
 }
 
 .CSlist-title {
