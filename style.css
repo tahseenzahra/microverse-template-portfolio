@@ -225,7 +225,7 @@ ul.no-bullets {
   border-radius: 8px;
   margin: 12px 0;
   padding: 12px;
-  cursor:pointer;
+  cursor: pointer;
 }
 
 /* footerbtn functions */
@@ -403,7 +403,7 @@ hr.horizontal-line {
 }
 
 #footer-hr {
-  border: 5px solid #0D151E;
+  border: 5px solid #0d151e;
   width: 0.1px;
   padding: 32px 120px 8px 120px;
   border-width: 0 0 2px 0;
