@@ -221,6 +221,29 @@ ul.no-bullets {
   padding: 12px;
 }
 
+/* button functions */
+
+.button:hover {
+  color: #fff;
+  background-color: #6070ff;
+  border: 1px solid #6070ff;
+  box-shadow: 0px 8px 16px rgba(64, 83, 252, 0.24);
+}
+
+.button:active {
+  color: #fff;
+  background-color: #2230d2;
+  border: 1px solid #2230d2;
+}
+
+.button:disabled {
+  color: #5e6c84;
+  background-color: #fff;
+  border: 1px solid #c1c7d0;
+}
+
+/* end of button funcions */
+
 #about-myself {
   display: flex;
   flex-direction: column;
