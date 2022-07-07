@@ -355,6 +355,7 @@ hr.horizontal-line {
   font-size: 15px;
   line-height: 24px;
   color: #B3BAC5;
+  padding: 0;
 }
 
 #username,
