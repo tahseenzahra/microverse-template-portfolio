@@ -496,8 +496,7 @@ hr.horizontal-line {
   .project {
     display: grid;
     grid-template-columns: calc(50% - 23px) calc(50% - 23px);
-    grid-template-areas: 
-      "img txt";
+    grid-template-areas: "img txt";
     gap: 46px;
   }
 
@@ -528,8 +527,7 @@ hr.horizontal-line {
   #about-myself {
     display: grid;
     grid-template-columns: calc(40% - 23px) calc(50% - 23px);
-    grid-template-areas: 
-      "about list";
+    grid-template-areas: "about list";
     gap: 46px;
   }
 
