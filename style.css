@@ -571,4 +571,8 @@ hr.horizontal-line {
   .CS-list-items {
     flex-direction: column;
   }
+
+  #about-myself {
+    padding-left: 60px;
+  }
 }
