@@ -536,6 +536,7 @@ hr.horizontal-line {
     grid-template-columns: calc(40% - 23px) calc(50% - 23px);
     grid-template-areas: "about list";
     gap: 46px;
+    padding-left: 60px;
   }
 
   .aboutinfo {
@@ -570,9 +571,5 @@ hr.horizontal-line {
 
   .CS-list-items {
     flex-direction: column;
-  }
-
-  #about-myself {
-    padding-left: 60px;
   }
 }
