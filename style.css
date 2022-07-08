@@ -20,8 +20,6 @@ body {
   /* bg */
   border-bottom-left-radius: 80px;
   width: 100vw;
-  background-image: url(./images/mobileheaderbg.svg);
-  background-size: cover;
   background-repeat: no-repeat;
 
   /* position: absolute; */
@@ -38,14 +36,6 @@ body {
   display: flex;
   flex-direction: column;
   gap: 12px;
-}
-
-#navbar-menu {
-  margin-left: auto;
-  position: relative;
-  top: 13px;
-  padding-right: 36px;
-  cursor: pointer;
 }
 
 .pg-headings {
@@ -68,8 +58,6 @@ body {
 }
 
 .intropara {
-  width: 327px;
-  height: 146px;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -408,4 +396,84 @@ hr.horizontal-line {
   padding: 32px 120px 8px 120px;
   border-width: 0 0 2px 0;
   align-self: center;
+}
+
+/* Desktop stuff */
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  align-items: center;
+  text-align: center;
+  visibility: hidden;
+  margin-right: 154px;
+}
+
+#portfolio-link,
+#about-link,
+#contact-link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #344563;
+}
+
+
+@media only screen and (max-width: 768px) {
+/* For Mobile phone */
+.menu {
+  display: none;
+ }
+
+#navbar-menu {
+  margin-left: auto;
+  position: relative;
+  top: 13px;
+  padding-right: 36px;
+  cursor: pointer;
+}
+
+.intropara {
+  width: 327px;
+  height: 146px;
+}
+
+.profile {
+  /* bg */
+  background-image: url(./images/mobileheaderbg.svg);
+  background-size: cover;
+}
+}
+
+@media not screen and (max-width: 767px) {
+  /* For Desktop */
+ #navbar-menu {
+  /* visibility: hidden; */
+  display: none;
+ }
+
+ .menu {
+  visibility: visible;
+ }
+
+ .header {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 100%;
+ }
+
+ .basic-intro {
+  padding: 314px 260px 325px 260px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.profile {
+  /* bg */
+  background-image: url(./images/D-header-bg.svg);
+}
 }
