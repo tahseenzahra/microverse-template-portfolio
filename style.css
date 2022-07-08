@@ -7,6 +7,8 @@ body {
   background: #e5e5e5;
   height: 100vh;
   width: 100vw;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
 }
 
 .container-bg-color,
@@ -46,18 +48,28 @@ body {
   cursor: pointer;
 }
 
-.main-heading {
-  font-style: normal;
+.pg-headings {
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
+}
+
+/* Colors */
+.white-txtcolor {
+  color: #fff;
+}
+
+.main-heading {
   color: #172b4d;
+}
+
+#footer-hreading {
+  align-self: center;
 }
 
 .intropara {
   width: 327px;
   height: 146px;
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -73,7 +85,6 @@ header {
 #logo {
   width: 76px;
   height: 20px;
-  font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
@@ -84,13 +95,7 @@ header {
   color: #6070ff;
 }
 
-.poppins-font,
-.proj-title {
-  font-family: 'Poppins', sans-serif;
-}
-
 .beforeicon-txt {
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
@@ -128,7 +133,6 @@ ul.no-bullets {
 .proj-title {
   width: 295px;
   height: 36px;
-  font-style: normal;
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
@@ -142,7 +146,6 @@ ul.no-bullets {
   padding-top: 12px;
   padding-bottom: 12px;
   align-items: center;
-  font-style: normal;
   font-weight: 600;
   font-size: 13px;
   line-height: 16px;
@@ -172,7 +175,6 @@ ul.no-bullets {
 }
 
 .proj-primarytxt {
-  font-style: normal;
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
@@ -192,7 +194,6 @@ ul.no-bullets {
   background: #ebebff;
   border-radius: 8px;
   padding: 4px 12px;
-  font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 16px;
@@ -206,21 +207,72 @@ ul.no-bullets {
   letter-spacing: 0.03em;
 }
 
+#footerbtn {
+  color: #6070ff;
+  border: 1px solid #cfd8dc;
+}
+
 .button {
   font-family: "Poppins", sans-serif;
-  font-style: normal;
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
   height: 48px;
   width: fit-content;
-  color: #4c5ace;
+  color: #396df2;
   background-color: white;
   border: 1px solid #4c5ace;
   border-radius: 8px;
   margin: 12px 0;
   padding: 12px;
+  cursor: pointer;
 }
+
+/* footerbtn functions */
+
+#footerbtn:hover {
+  color: #fff;
+  background-color: #6070ff;
+  border: 1px solid #cfd8dc;
+  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
+}
+
+#footerbtn:active {
+  color: #fff;
+  background-color: #2230d2;
+  border: 1px solid #cfd8dc;
+}
+
+#footerbtn:disabled {
+  color: #5e6c84;
+  background-color: #fff;
+  border: 1px solid #cfd8dc;
+}
+
+/* end of footerbtn funcions */
+
+/* button functions */
+
+.button:hover {
+  color: #fff;
+  background-color: #6070ff;
+  border: 1px solid #6070ff;
+  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
+}
+
+.button:active {
+  color: #fff;
+  background-color: #2230d2;
+  border: 1px solid #2230d2;
+}
+
+.button:disabled {
+  color: #5e6c84;
+  background-color: #fff;
+  border: 1px solid #c1c7d0;
+}
+
+/* end of button funcions */
 
 #about-myself {
   display: flex;
@@ -248,7 +300,6 @@ ul.no-bullets {
 
 .csLanguages li {
   font: inherit;
-  font-style: normal;
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
@@ -283,12 +334,7 @@ ul.no-bullets {
   -webkit-transform: rotate(-45deg);
 }
 
-.arrow-margin {
-  padding-left: 100%;
-}
-
 .CSlist-title {
-  font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
@@ -301,4 +347,65 @@ ul.no-bullets {
 
 hr.horizontal-line {
   border-top: 1px solid #dfe1e6;
+}
+
+.footer-p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #ebebff;
+}
+
+.footer-bg {
+  background: #6070ff;
+  background-image: url(./images/mobilecontact-pg-bg.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  border-top-left-radius: 80px;
+  display: flex;
+  flex-direction: column;
+  padding: 103px 24px 8px 24px;
+  gap: 12px;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-field {
+  background: #fff;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #b3bac5;
+  padding: 0;
+}
+
+#username,
+#user-email,
+#form-msg {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 15px 38px 15px 16px;
+  color: #172b4d;
+}
+
+#username {
+  margin-top: 87px;
+}
+
+#footer-hr {
+  border: 5px solid #0d151e;
+  width: 0.1px;
+  padding: 32px 120px 8px 120px;
+  border-width: 0 0 2px 0;
+  align-self: center;
 }
