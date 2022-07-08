@@ -20,8 +20,6 @@ body {
   /* bg */
   border-bottom-left-radius: 80px;
   width: 100vw;
-  background-image: url(./images/mobileheaderbg.svg);
-  background-size: cover;
   background-repeat: no-repeat;
 
   /* position: absolute; */
@@ -38,14 +36,6 @@ body {
   display: flex;
   flex-direction: column;
   gap: 12px;
-}
-
-#navbar-menu {
-  margin-left: auto;
-  position: relative;
-  top: 13px;
-  padding-right: 36px;
-  cursor: pointer;
 }
 
 .pg-headings {
@@ -68,8 +58,6 @@ body {
 }
 
 .intropara {
-  width: 327px;
-  height: 146px;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -128,6 +116,12 @@ ul.no-bullets {
   border: 1px solid #dfe1e6;
   box-sizing: border-box;
   border-radius: 16px;
+}
+
+.workcard-text {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .proj-title {
@@ -292,7 +286,6 @@ ul.no-bullets {
 
 .csLanguages {
   display: flex;
-  flex-direction: column;
   padding: 12px;
   gap: 12px;
   color: #000;
@@ -309,7 +302,6 @@ ul.no-bullets {
 
 .CS-list-items {
   display: flex;
-  flex-direction: row;
   align-items: center;
   gap: 16px;
   background: #f7f7f9;
@@ -358,15 +350,20 @@ hr.horizontal-line {
 }
 
 .footer-bg {
+  box-sizing: border-box;
+  width: 100%;
   background: #6070ff;
-  background-image: url(./images/mobilecontact-pg-bg.svg);
   background-repeat: no-repeat;
   background-position: right;
   border-top-left-radius: 80px;
+  padding: 103px 24px 8px 24px;
+}
+
+.footer-info {
   display: flex;
   flex-direction: column;
-  padding: 103px 24px 8px 24px;
   gap: 12px;
+  width: 100%;
 }
 
 #form {
@@ -398,14 +395,181 @@ hr.horizontal-line {
   color: #172b4d;
 }
 
-#username {
-  margin-top: 87px;
-}
-
 #footer-hr {
   border: 5px solid #0d151e;
   width: 0.1px;
   padding: 32px 120px 8px 120px;
   border-width: 0 0 2px 0;
   align-self: center;
+}
+
+/* Desktop stuff */
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  align-items: center;
+  text-align: center;
+  visibility: hidden;
+  margin-right: 154px;
+}
+
+#portfolio-link,
+#about-link,
+#contact-link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #344563;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For Mobile phone */
+  .menu {
+    display: none;
+  }
+
+  #navbar-menu {
+    margin-left: auto;
+    position: relative;
+    top: 13px;
+    padding-right: 36px;
+    cursor: pointer;
+  }
+
+  .intropara {
+    width: 327px;
+    height: 146px;
+  }
+
+  .profile {
+    /* bg */
+    background-image: url(./images/mobileheaderbg.svg);
+    background-size: cover;
+  }
+
+  .footer-bg {
+    box-sizing: border-box;
+    background-image: url(./images/mobilecontact-pg-bg.svg);
+  }
+
+  #username {
+    margin-top: 87px;
+  }
+
+  .csLanguages {
+    flex-direction: column;
+  }
+
+  .CS-list-items {
+    flex-direction: row;
+  }
+}
+
+@media not screen and (max-width: 767px) {
+  /* For Desktop */
+  #navbar-menu,
+  #footer-hr {
+    /* visibility: hidden; */
+    display: none;
+  }
+
+  .menu {
+    visibility: visible;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  .basic-intro {
+    padding: 114px 260px 325px 260px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .profile {
+    /* bg */
+    background-image: url(./images/D-header-bg.svg);
+  }
+
+  .project {
+    display: grid;
+    grid-template-columns: calc(50% - 23px) calc(50% - 23px);
+    grid-template-areas: "img txt";
+    gap: 46px;
+    margin: 10px 42px;
+  }
+
+  .img {
+    grid-area: img;
+    width: 100%;
+  }
+
+  .txt {
+    grid-area: txt;
+  }
+
+  .reverse-img {
+    grid-area: txt;
+    width: 100%;
+  }
+
+  .reverse-txt {
+    grid-area: img;
+  }
+
+  #card2,
+  #card4 {
+    /* grid-area: txt; */
+    order: -1;
+  }
+
+  #about-myself {
+    display: grid;
+    grid-template-columns: calc(40% - 23px) calc(50% - 23px);
+    grid-template-areas: "about list";
+    gap: 46px;
+    padding-left: 60px;
+  }
+
+  .aboutinfo {
+    grid-area: about;
+  }
+
+  .tech-list {
+    grid-area: list;
+    width: 100%;
+  }
+
+  .footer-bg {
+    background-image: url(./images/D-contact-bg.svg);
+  }
+
+  .footer-info {
+    width: 50%;
+    padding: 142px 25% 127px 25%;
+  }
+
+  #username {
+    margin-top: 12px;
+  }
+
+  #footerbtn {
+    align-self: center;
+  }
+
+  .csLanguages {
+    flex-direction: row;
+  }
+
+  .CS-list-items {
+    flex-direction: column;
+  }
 }
