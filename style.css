@@ -286,7 +286,6 @@ ul.no-bullets {
 
 .csLanguages {
   display: flex;
-  flex-direction: column;
   padding: 12px;
   gap: 12px;
   color: #000;
@@ -303,7 +302,6 @@ ul.no-bullets {
 
 .CS-list-items {
   display: flex;
-  flex-direction: row;
   align-items: center;
   gap: 16px;
   background: #f7f7f9;
@@ -460,6 +458,14 @@ hr.horizontal-line {
   #username {
     margin-top: 87px;
   }
+
+  .csLanguages {
+    flex-direction: column;
+  }
+
+  .CS-list-items {
+    flex-direction: row;
+  }
 }
 
 @media not screen and (max-width: 767px) {
@@ -482,7 +488,7 @@ hr.horizontal-line {
   }
 
   .basic-intro {
-    padding: 314px 260px 325px 260px;
+    padding: 114px 260px 325px 260px;
     display: flex;
     flex-direction: column;
     gap: 12px;
@@ -498,6 +504,7 @@ hr.horizontal-line {
     grid-template-columns: calc(50% - 23px) calc(50% - 23px);
     grid-template-areas: "img txt";
     gap: 46px;
+    margin: 10px 42px;
   }
 
   .img {
@@ -555,5 +562,13 @@ hr.horizontal-line {
 
   #footerbtn {
     align-self: center;
+  }
+
+  .csLanguages {
+    flex-direction: row;
+  }
+
+  .CS-list-items {
+    flex-direction: column;
   }
 }
