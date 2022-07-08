@@ -51,7 +51,21 @@ body {
 
 .main-heading {
   color: #172b4d;
+  animation-duration: 3s;
+  /* -----animation change----- */
+  animation-name: heading-color;
 }
+
+@keyframes heading-color {
+  from {
+    color: #fff;
+  }
+
+  to {
+    color: #172b4d;
+  }
+}
+/* -----end of animation change----- */
 
 #footer-hreading {
   align-self: center;
