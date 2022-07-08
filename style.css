@@ -428,7 +428,6 @@ hr.horizontal-line {
 }
 
 @media only screen and (max-width: 768px) {
-
   /* For Mobile phone */
   .menu {
     display: none;
@@ -464,7 +463,6 @@ hr.horizontal-line {
 }
 
 @media not screen and (max-width: 767px) {
-
   /* For Desktop */
   #navbar-menu,
   #footer-hr {
@@ -498,7 +496,7 @@ hr.horizontal-line {
   .project {
     display: grid;
     grid-template-columns: calc(50% - 23px) calc(50% - 23px);
-    grid-template-areas:
+    grid-template-areas: 
       "img txt";
     gap: 46px;
   }
@@ -530,7 +528,7 @@ hr.horizontal-line {
   #about-myself {
     display: grid;
     grid-template-columns: calc(40% - 23px) calc(50% - 23px);
-    grid-template-areas:
+    grid-template-areas: 
       "about list";
     gap: 46px;
   }
