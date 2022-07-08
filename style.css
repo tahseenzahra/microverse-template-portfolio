@@ -118,6 +118,12 @@ ul.no-bullets {
   border-radius: 16px;
 }
 
+.workcard-text {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
 .proj-title {
   width: 295px;
   height: 36px;
@@ -346,15 +352,20 @@ hr.horizontal-line {
 }
 
 .footer-bg {
+  box-sizing: border-box;
+  width: 100%;
   background: #6070ff;
-  background-image: url(./images/mobilecontact-pg-bg.svg);
   background-repeat: no-repeat;
   background-position: right;
   border-top-left-radius: 80px;
+  padding: 103px 24px 8px 24px;
+}
+
+.footer-info {
   display: flex;
   flex-direction: column;
-  padding: 103px 24px 8px 24px;
   gap: 12px;
+  width: 100%;
 }
 
 #form {
@@ -384,10 +395,6 @@ hr.horizontal-line {
   box-sizing: border-box;
   padding: 15px 38px 15px 16px;
   color: #172b4d;
-}
-
-#username {
-  margin-top: 87px;
 }
 
 #footer-hr {
@@ -421,6 +428,7 @@ hr.horizontal-line {
 }
 
 @media only screen and (max-width: 768px) {
+
   /* For Mobile phone */
   .menu {
     display: none;
@@ -444,11 +452,22 @@ hr.horizontal-line {
     background-image: url(./images/mobileheaderbg.svg);
     background-size: cover;
   }
+
+  .footer-bg {
+    box-sizing: border-box;
+    background-image: url(./images/mobilecontact-pg-bg.svg);
+  }
+
+  #username {
+    margin-top: 87px;
+  }
 }
 
 @media not screen and (max-width: 767px) {
-    /* For Desktop */
-  #navbar-menu {
+
+  /* For Desktop */
+  #navbar-menu,
+  #footer-hr {
     /* visibility: hidden; */
     display: none;
   }
@@ -474,5 +493,71 @@ hr.horizontal-line {
   .profile {
     /* bg */
     background-image: url(./images/D-header-bg.svg);
+  }
+
+  .project {
+    display: grid;
+    grid-template-columns: calc(50% - 23px) calc(50% - 23px);
+    grid-template-areas:
+      "img txt";
+    gap: 46px;
+  }
+
+  .img {
+    grid-area: img;
+    width: 100%;
+  }
+
+  .txt {
+    grid-area: txt;
+  }
+
+  .reverse-img {
+    grid-area: txt;
+    width: 100%;
+  }
+
+  .reverse-txt {
+    grid-area: img;
+  }
+
+  #card2,
+  #card4 {
+    /* grid-area: txt; */
+    order: -1;
+  }
+
+  #about-myself {
+    display: grid;
+    grid-template-columns: calc(40% - 23px) calc(50% - 23px);
+    grid-template-areas:
+      "about list";
+    gap: 46px;
+  }
+
+  .aboutinfo {
+    grid-area: about;
+  }
+
+  .tech-list {
+    grid-area: list;
+    width: 100%;
+  }
+
+  .footer-bg {
+    background-image: url(./images/D-contact-bg.svg);
+  }
+
+  .footer-info {
+    width: 50%;
+    padding: 142px 25% 127px 25%;
+  }
+
+  #username {
+    margin-top: 12px;
+  }
+
+  #footerbtn {
+    align-self: center;
   }
 }
