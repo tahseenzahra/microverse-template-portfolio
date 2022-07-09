@@ -176,11 +176,11 @@ ul.no-bullets {
 }
 
 .proj-list {
-  display: flex;
-  flex-direction: row;
+  /* display: flex;
+  flex-direction: row; */
   gap: 8px;
   align-items: center;
-  width: 53px;
+  /* width: 53px; */
   height: 24px;
 }
 
@@ -193,6 +193,8 @@ ul.no-bullets {
   line-height: 16px;
   letter-spacing: 0.03em;
   color: #6070ff;
+  float: left;
+  margin-right: 10px;
 }
 
 .see-proj {
