@@ -94,7 +94,13 @@ header {
   align-items: center;
   text-align: center;
   text-decoration: none;
-  color: #6070ff;
+  color: #99a3fa;
+  transition: 1s 0.2s ease;
+}
+
+#logo:hover {
+ color : rgba(133, 251, 255, 0.5);
+ font-size: 25px;
 }
 
 .beforeicon-txt {
