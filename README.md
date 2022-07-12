@@ -41,6 +41,12 @@ View the file through the source code.
 - Twitter: [@twitterhandle](https://twitter.com/EFYAMOTU)
 - LinkedIn: [LinkedIn](www.linkedin.com/in/musa-habeeb)
 
+👤 **Norman Ainobushoborozi**
+
+- GitHub: [@githubhandle](https://github.com/normainobary2021)
+- Twitter: [@twitterhandle](https://twitter.com/NormanAinobush2)
+- LinkedIn: [LinkedIn](www.linkedin.com/in/norman-ainobushoborozi)
+
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
