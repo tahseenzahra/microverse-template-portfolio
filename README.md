@@ -45,7 +45,7 @@ View the file through the source code.
 
 - GitHub: [@githubhandle](https://github.com/normainobary2021)
 - Twitter: [@twitterhandle](https://twitter.com/NormanAinobush2)
-- LinkedIn: [LinkedIn](www.linkedin.com/in/norman-ainobushoborozi)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/norman-ainobushoborozi/)
 
 ## 🤝 Contributing
 
