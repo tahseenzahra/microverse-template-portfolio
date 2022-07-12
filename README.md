@@ -22,9 +22,12 @@ View the file through the source code.
 
 👤 **Tahseen Zahra (owner)**
 
-- GitHub: [@githubhandle](https://github.com/tahseenzahra)
-- Twitter: [@twitterhandle](https://twitter.com/tahseen1zahra)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/tahseenzahra/)
+- GitHub: [@tahseenzahra](https://github.com/tahseenzahra)
+- Twitter: [@tahseen1zahra](https://twitter.com/tahseen1zahra)
+- LinkedIn: [@tahseenzahra](https://www.linkedin.com/in/tahseenzahra/)
+
+## Collaborators
+
 
 👤 **Camilo Vela**
 
@@ -34,9 +37,15 @@ View the file through the source code.
 
 👤 **Habeeb Musa Efiamotu**
 
-- GitHub: [@githubhandle](https://github.com/Efiamotu-1)
-- Twitter: [@twitterhandle](https://twitter.com/EFYAMOTU)
-- LinkedIn: [LinkedIn](www.linkedin.com/in/musa-habeeb)
+- GitHub: [@efiamotu-1](https://github.com/Efiamotu-1)
+- Twitter: [@efyamotu](https://twitter.com/EFYAMOTU)
+- LinkedIn: [@musa-habeeb](www.linkedin.com/in/musa-habeeb)
+
+👤 **Norman Ainobushoborozi**
+
+- GitHub: [@normainobary2021](https://github.com/normainobary2021)
+- Twitter: [@NormanAinobush2](https://twitter.com/NormanAinobush2)
+- LinkedIn: [@norman-ainobushoborozi](https://www.linkedin.com/in/norman-ainobushoborozi/)
 
 ## 🤝 Contributing
 

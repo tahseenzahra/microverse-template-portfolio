@@ -465,8 +465,10 @@ img:hover {
   }
 
   .intropara {
-    width: 327px;
-    height: 146px;
+    width: 65%;
+
+    /* width: 327px;
+    height: 146px; */
   }
 
   .profile {
