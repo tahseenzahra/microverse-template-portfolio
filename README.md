@@ -24,7 +24,7 @@ View the file through the source code.
 
 - GitHub: [@githubhandle](https://github.com/tahseenzahra)
 - Twitter: [@twitterhandle](https://twitter.com/tahseen1zahra)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/tahseenzahra/)
+- LinkedIn: [@tahseenzahra](https://www.linkedin.com/in/tahseenzahra/)
 
 ## Collaborators
 
@@ -39,13 +39,13 @@ View the file through the source code.
 
 - GitHub: [@githubhandle](https://github.com/Efiamotu-1)
 - Twitter: [@twitterhandle](https://twitter.com/EFYAMOTU)
-- LinkedIn: [LinkedIn](www.linkedin.com/in/musa-habeeb)
+- LinkedIn: [@musa-habeeb](www.linkedin.com/in/musa-habeeb)
 
 👤 **Norman Ainobushoborozi**
 
 - GitHub: [@githubhandle](https://github.com/normainobary2021)
 - Twitter: [@twitterhandle](https://twitter.com/NormanAinobush2)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/norman-ainobushoborozi/)
+- LinkedIn: [@norman-ainobushoborozi](https://www.linkedin.com/in/norman-ainobushoborozi/)
 
 ## 🤝 Contributing
 
