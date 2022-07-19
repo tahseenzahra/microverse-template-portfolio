@@ -9,6 +9,27 @@ body {
   width: 100vw;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
+  scroll-behavior: smooth;
+}
+
+.menu-popup {
+  background: rgb(96, 112, 255, 0.9);
+  /* mix-blend-mode: multiply; */
+  /* opacity: 0.5; */
+}
+
+.menu-popup-links {
+  display: flex;
+  flex-direction: column;
+  padding: 32px 96px 554px 24px;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.menu-popup div a {
+  text-decoration: none;
+  color: #fff;
 }
 
 .container-bg-color,
