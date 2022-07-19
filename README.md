@@ -47,6 +47,15 @@ View the file through the source code.
 - Twitter: [@NormanAinobush2](https://twitter.com/NormanAinobush2)
 - LinkedIn: [@norman-ainobushoborozi](https://www.linkedin.com/in/norman-ainobushoborozi/)
 
+
+👤 **Erik Stoupignan Sánchez Beltrán**
+
+- GitHub: [@ErikStoupignan](https://github.com/ErikStoupignan)
+- Twitter: [@Erik_Stoupignan](https://twitter.com/Erik_Stoupignan)
+- LinkedIn: [Erik Stoupignan Sánchez Beltrán](https://www.linkedin.com/in/erik-stoupignan-s%C3%A1nchez-beltr%C3%A1n-393180238/)
+
+
+
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
