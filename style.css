@@ -41,9 +41,6 @@ body {
   backdrop-filter: blur(7px);
   width: 100%;
   position: fixed;
-    /* display: flex; */
-  /* mix-blend-mode: multiply; */
-  /* opacity: 0.5; */
 }
 
 .menu-popup-links {
