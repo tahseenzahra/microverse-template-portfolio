@@ -14,25 +14,27 @@
 <body>
 
   <!-- Mobile menu -->
-  <section class="menu-popup">
-    <i class="fas fa-times x-icon"></i>
-    <div class="menu-popup-links white-txtcolor">
-      <a href="#logo" class="poppins-font">Portfolio</a>
-      <a href="#about-myself" class="poppins-font">About</a>
-      <a href="#footer-hreading" class="poppins-font">Contact</a>
+  <!-- style="display: none;" -->
+  <section class="menu-popup menu-close visible" id="mob-menu">
+    <i class="fas fa-times x-icon" id="x-iconid"></i>
+    <div class="menu-popup-links white-txtcolor" id="navLinks">
+      <a href="#logo">Portfolio</a>
+      <a href="#about-myself">About</a>
+      <a href="#footer-hreading">Contact</a>
     </div>
+    <hr id="footer-hr mob-popupfooter">
   </section>
   <!-- header -->
 
  <header class="header container-bg-color"> 
-    <a href="#" id="logo" class="poppins-font">Zahra</a>
+    <a href="#" id="logo">Zahra</a>
     <div class="menu">
-      <a href="#logo" id="portfolio-link" class="poppins-font">Portfolio</a>
-      <a href="#about-myself" id="about-link" class="poppins-font">About</a>
-      <a href="#footer-hreading" id="contact-link" class="poppins-font">Contact</a>
+      <a href="#logo" id="portfolio-link">Portfolio</a>
+      <a href="#about-myself" id="about-link">About</a>
+      <a href="#footer-hreading" id="contact-link">Contact</a>
     </div>
     <nav id="navbar-menu">
-      <img src="./images/hamburger.svg" alt="Menu icon">
+      <img src="./images/hamburger.svg" alt="Menu icon" id="hamburger-icon">
     </nav>
   </header>
 
@@ -260,5 +262,8 @@
       </div>
     </footer>
   </section>
+
+  <!-- Javascript -->
+  <script src="./script.js"></script>
 </body>
 </html>

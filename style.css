@@ -29,14 +29,18 @@ body {
   right: 25%;
 } */
 
+#mob-menu {
+  display: none;
+}
+
 .menu-popup {
   background: rgba(53, 72, 241, 0.705);
   top: 0;
-    right: 0;
-    height: 100vh;
-    backdrop-filter: blur(7px);
-    width: 100%;
-    position: fixed;
+  right: 0;
+  height: 100vh;
+  backdrop-filter: blur(7px);
+  width: 100%;
+  position: fixed;
     /* display: flex; */
   /* mix-blend-mode: multiply; */
   /* opacity: 0.5; */
@@ -66,12 +70,6 @@ body {
   border-bottom-left-radius: 80px;
   width: 100vw;
   background-repeat: no-repeat;
-
-  /* position: absolute; */
-
-  /* width: 462px; */
-
-  /* height: auto; */
 }
 
 .basic-intro {
