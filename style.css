@@ -640,3 +640,11 @@ img:hover {
     flex-direction: column;
   }
 }
+
+/* Detail popup section bg */
+
+.project-popupbg {
+  background: rgba(53, 72, 241, 0.4);
+}
+
+
