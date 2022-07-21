@@ -647,4 +647,22 @@ img:hover {
   background: rgba(53, 72, 241, 0.4);
 }
 
+.popup-tech-list-ul {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  width: 53px;
+  height: 24px;
+}
 
+.popup-tech-list-li {
+  background: #ebebff;
+  border-radius: 8px;
+  padding: 4px 12px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #6070ff;
+}

@@ -68,6 +68,10 @@ const prjinfo = document.querySelector('#proj-about-id');
 const prjname = document.querySelector('#proj-name-id');
 const prjtype = document.querySelector('#proj-type-id');
 const prjyear = document.querySelector('#proj-year-id');
+const prjimg = document.querySelector('#img-id');
+const prjdescription = document.querySelector('#proj-primarytxt-id');
+const prjtechnologies = document.querySelector('#tech-list-id');
+
 
 for (let i = 0; i < projectsDetail.length; i += 1)
 {
@@ -77,6 +81,21 @@ for (let i = 0; i < projectsDetail.length; i += 1)
   prjname.textContent = projectName;
   prjtype.textContent = projectRole;
   prjyear.textContent = projectYear;
+
+  prjimg.src = projectsDetail[i].featured_img;
+
+  prjdescription.textContent = projectsDetail[i].more_description;
+  
+  prjtechnologies.textContent = projectsDetail[i].technologies;
+  prjtechnologies.className = 'popup-tech-list-ul';
+
+  for (let j = 0; j < projectsDetail[i].prjtechnologies.length; j += 1) {
+    const technology = document.createElement('li');
+    technology.textContent = projectsDetail[i].prjtechnologies[j];
+    technology.className = 'popup-tech-list-li';
+    prjtechnologies.appendChild(technology);
+  }
+
 
   
 }
