@@ -27,7 +27,7 @@ const projectsDetail = [
     featured_img: `./images/img1.svg`,
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     more_description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum, nobis!',
-    technologies: [`html`, `css`, `javascript`],
+    technologies: [`html1`, `css`, `javascript`],
     source_link: `https://github.com/tahseenzahra/microverse-template-portfolio`,
     version_link: `https://tahseenzahra.github.io/microverse-template-portfolio/`
   },
@@ -38,7 +38,7 @@ const projectsDetail = [
     featured_img: `./images/img2.svg`,
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     more_description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum, nobis!',
-    technologies: [`html`, `css`, `javascript`],
+    technologies: [`html2`, `css`, `javascript`],
     source_link: `https://github.com/tahseenzahra/microverse-template-portfolio`,
     version_link: `https://tahseenzahra.github.io/microverse-template-portfolio/`
   },
@@ -49,7 +49,7 @@ const projectsDetail = [
     featured_img: `./images/img3.svg`,
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     more_description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum, nobis!',
-    technologies: [`html`, `css`, `javascript`],
+    technologies: [`html3`, `css`, `javascript`],
     source_link: `https://github.com/tahseenzahra/microverse-template-portfolio`,
     version_link: `https://tahseenzahra.github.io/microverse-template-portfolio/`
   },
@@ -60,7 +60,7 @@ const projectsDetail = [
     featured_img: `./images/img4.svg`,
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     more_description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum, nobis!',
-    technologies: [`html`, `css`, `javascript`],
+    technologies: [`html4`, `css`, `javascript`],
     source_link: `https://github.com/tahseenzahra/microverse-template-portfolio`,
     version_link: `https://tahseenzahra.github.io/microverse-template-portfolio/`
   },
@@ -76,20 +76,21 @@ function popup(string) {
 
   const index = found(string);
 }
-
+let s;
 let arrindex = [];
-console.log('i am before the outside function', arrindex);
+// console.log('i am before the outside function', arrindex);
 function found(input) {
-  console.log('inside the found function')
+  console.log('inside the found function', input)
+
   for (let i = 0; i < projectsDetail.length; i += 1) {
     if (projectsDetail[i].id === input) {
-      console.log( 'here is value of i', i);
+      console.log( 'found fun here is value of i', i);
       // here push the value of i in a variable
       arrindex.push(i);
-      console.log('value of i in arrindex', arrindex);
-
+      console.log('found fun value of i in arrindex', arrindex);
+      // s = i;
       // calling function to get values from projectDetail
-      getData(arrindex);
+      getData(i);
 
       return i;
       
@@ -133,16 +134,20 @@ function getData(i) {
 
   prjdescription.textContent = projectsDetail[i].more_description;
   
+console.log(i);
+console.log('length of tech: ',projectsDetail[i].technologies.length);
+
   let j = 0;
   do {
     console.log('insode do while', j, i);
     const technology = document.createElement('li');
-    technology.textContent = projectsDetail[i].technologies[j];
+    technology.textContent = projectsDetail[arrindex].technologies[j];
     // technology.className = 'popup-tech-list-li';
     prjtechnologies.appendChild(technology);
     console.log(j, i);
+    console.log('Technologies indise project: ',projectsDetail[arrindex].technologies[j]);
     j += 1;
-  } while (j < projectsDetail[1].technologies.length);
+  } while (j < projectsDetail[i].technologies.length);
 
   prjSrcbtn.href = projectsDetail[i].source_link;
   prjLivebtn.href = projectsDetail[i].version_link
