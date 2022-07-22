@@ -141,6 +141,9 @@ console.log('length of tech: ',projectsDetail[i].technologies.length);
   do {
     console.log('insode do while', j, i);
     const technology = document.createElement('li');
+
+    // technology = technologies[j];
+
     technology.textContent = projectsDetail[arrindex].technologies[j];
     // technology.className = 'popup-tech-list-li';
     prjtechnologies.appendChild(technology);
