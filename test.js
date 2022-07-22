@@ -1,23 +1,3 @@
-const menu = document.querySelector('#mob-menu');
-const hamburger = document.querySelector('#hamburger-icon');
-const closebtn = document.querySelector('#x-iconid');
-const navlinks = document.querySelector('#navLinks');
-
-hamburger.addEventListener('click', () => {
-  menu.style.display = 'block';
-  hamburger.style.display = 'none';
-});
-
-closebtn.addEventListener('click', () => {
-  menu.style.display = 'none';
-  hamburger.style.display = 'block';
-});
-
-navlinks.addEventListener('click', () => {
-  menu.style.display = 'none';
-  hamburger.style.display = 'block';
-});
-
 // Project detail popup
 
 const projectsDetail = [
@@ -67,21 +47,20 @@ const projectsDetail = [
   },
 ]
 
-// function to get index i value from see project btn id
+const see_project_clicked = document.get
 
 // function to get id value from see project btn
 let i = '';
 function found(input) {
   for (i = 0; i < projectsDetail.length; i += 1) {
     if (projectsDetail[i].id === input) {
-      console.log( 'here is value of i', i);
       return i;
     }
   }
   return null;
 }
 
-
+// console.log(i);
 
 const prjtitle = document.querySelector('#proj-title-id');
 const prjinfo = document.querySelector('#proj-about-id');
@@ -94,32 +73,46 @@ const prjtechnologies = document.querySelector('#tech-list-id');
 const prjSrcbtn = document.querySelector('#sourcebtn-id');
 const prjLivebtn = document.querySelector('#livebtn-id');
 
+// Get project innerHTML
+
+// do {
+  
+// } while (i < projectsDetail.length);
+
+// if (i < projectsDetail.length) {
+  
+// }
+
+
+
 for (let i = 0; i < projectsDetail.length; i += 1)
 {
-  prjtitle.textContent = projectsDetail[i].title;
-
-  const [projectName, projectRole, projectYear] = projectsDetail[i].info;
-  prjname.textContent = projectName;
-  prjtype.textContent = projectRole;
-  prjyear.textContent = projectYear;
-
-  prjimg.src = projectsDetail[i].featured_img;
-
-  prjdescription.textContent = projectsDetail[i].more_description;
+  function displayProjData(i) {
+    prjtitle.textContent = projectsDetail[i].title;
   
-  let j = 0;
-  do {
-    console.log('insode do while', j, i);
-    const technology = document.createElement('li');
-    technology.textContent = projectsDetail[i].technologies[j];
-    // technology.className = 'popup-tech-list-li';
-    prjtechnologies.appendChild(technology);
-    console.log(j, i);
-    j += 1;
-  } while (j < projectsDetail[1].technologies.length);
-
-  prjSrcbtn.href = projectsDetail[i].source_link;
-  prjLivebtn.href = projectsDetail[i].version_link;
+    const [projectName, projectRole, projectYear] = projectsDetail[i].info;
+    prjname.textContent = projectName;
+    prjtype.textContent = projectRole;
+    prjyear.textContent = projectYear;
+  
+    prjimg.src = projectsDetail[i].featured_img;
+  
+    prjdescription.textContent = projectsDetail[i].more_description;
+    
+    let j = 0;
+    do {
+      console.log('insode do while', j, i);
+      const technology = document.createElement('li');
+      technology.textContent = projectsDetail[i].technologies[j];
+      // technology.className = 'popup-tech-list-li';
+      prjtechnologies.appendChild(technology);
+      console.log(j, i);
+      j += 1;
+    } while (j < projectsDetail[1].technologies.length);
+  
+    prjSrcbtn.href = projectsDetail[i].source_link;
+    prjLivebtn.href = projectsDetail[i].version_link;
+  }
 
   // prjtechnologies.textContent = projectsDetail[i].technologies;
   // prjtechnologies.className = 'popup-tech-list-ul';
