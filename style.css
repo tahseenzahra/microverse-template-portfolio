@@ -648,7 +648,14 @@ img:hover {
 /* Detail popup section bg */
 
 .project-popupbg {
+  display: none;
   background: rgba(53, 72, 241, 0.4);
+  top: 0;
+  right: 0;
+  height: 100vh;
+  backdrop-filter: blur(7px);
+  width: 100%;
+  position: fixed;
 }
 
 .popup-tech-list-ul {
@@ -674,4 +681,23 @@ img:hover {
 .style-popupbtn {
   display: flex;
   gap: 24px;
+}
+
+.popup-detailCard {
+  display: flex;
+  gap: 20px;
+  margin: 5%;
+  align-content: center;
+  justify-content: center;
+  height: 88vh;
+  box-sizing: content-box;
+}
+
+.prj-popup-header > .x-icon {
+  color: #67798e;
+  top: 15px;
+}
+
+.prj-popup-header {
+  display: flex;
 }

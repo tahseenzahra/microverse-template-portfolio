@@ -18,8 +18,7 @@ navlinks.addEventListener('click', () => {
   hamburger.style.display = 'block';
 });
 
-// Project detail popup
-
+// Project detail popup Data *start
 const projectsDetail = [
   {
     id: `project1`,
@@ -66,22 +65,40 @@ const projectsDetail = [
     version_link: `https://tahseenzahra.github.io/microverse-template-portfolio/`
   },
 ]
+// Project detail popup Data *end
 
 // function to get index i value from see project btn id
 
-// function to get id value from see project btn
-let i = '';
+  // function to get string to match id value from see Project BTN
+const detailPopup = document.getElementById('popup-1');
+function popup(string) {
+  detailPopup.style.display = 'block';
+
+  const index = found(string);
+}
+
+let arrindex = [];
+console.log('i am before the outside function', arrindex);
 function found(input) {
-  for (i = 0; i < projectsDetail.length; i += 1) {
+  console.log('inside the found function')
+  for (let i = 0; i < projectsDetail.length; i += 1) {
     if (projectsDetail[i].id === input) {
       console.log( 'here is value of i', i);
+      // here push the value of i in a variable
+      arrindex.push(i);
+      console.log('value of i in arrindex', arrindex);
+
+      // calling function to get values from projectDetail
+      getData(arrindex);
+
       return i;
+      
     }
   }
   return null;
 }
-
-
+console.log('i am after the outside function')
+console.log('outside the found here is value of i', arrindex);
 
 const prjtitle = document.querySelector('#proj-title-id');
 const prjinfo = document.querySelector('#proj-about-id');
@@ -94,9 +111,18 @@ const prjtechnologies = document.querySelector('#tech-list-id');
 const prjSrcbtn = document.querySelector('#sourcebtn-id');
 const prjLivebtn = document.querySelector('#livebtn-id');
 
-for (let i = 0; i < projectsDetail.length; i += 1)
-{
+const popupclosebtn = document.querySelector('#x-icon-popup-id');
+popupclosebtn.addEventListener('click', () => {
+  detailPopup.style.display = 'none';
+  // menu.style.display = 'none';
+  // hamburger.style.display = 'block';
+});
+// GetData for detail project popup * start
+
+function getData(i) {
   prjtitle.textContent = projectsDetail[i].title;
+
+  console.log('im in get data function');
 
   const [projectName, projectRole, projectYear] = projectsDetail[i].info;
   prjname.textContent = projectName;
@@ -119,7 +145,37 @@ for (let i = 0; i < projectsDetail.length; i += 1)
   } while (j < projectsDetail[1].technologies.length);
 
   prjSrcbtn.href = projectsDetail[i].source_link;
-  prjLivebtn.href = projectsDetail[i].version_link;
+  prjLivebtn.href = projectsDetail[i].version_link
+}
+
+// GetData for detail project popup end *
+
+for (let i = 0; i < projectsDetail.length; i += 1)
+{
+  // prjtitle.textContent = projectsDetail[i].title;
+
+  // const [projectName, projectRole, projectYear] = projectsDetail[i].info;
+  // prjname.textContent = projectName;
+  // prjtype.textContent = projectRole;
+  // prjyear.textContent = projectYear;
+
+  // prjimg.src = projectsDetail[i].featured_img;
+
+  // prjdescription.textContent = projectsDetail[i].more_description;
+  
+  // let j = 0;
+  // do {
+  //   console.log('insode do while', j, i);
+  //   const technology = document.createElement('li');
+  //   technology.textContent = projectsDetail[i].technologies[j];
+  //   // technology.className = 'popup-tech-list-li';
+  //   prjtechnologies.appendChild(technology);
+  //   console.log(j, i);
+  //   j += 1;
+  // } while (j < projectsDetail[1].technologies.length);
+
+  // prjSrcbtn.href = projectsDetail[i].source_link;
+  // prjLivebtn.href = projectsDetail[i].version_link;
 
   // prjtechnologies.textContent = projectsDetail[i].technologies;
   // prjtechnologies.className = 'popup-tech-list-ul';
