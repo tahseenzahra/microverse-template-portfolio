@@ -21,78 +21,57 @@ navlinks.addEventListener('click', () => {
 // Project detail popup Data *start
 const projectsDetail = [
   {
-    id: `project1`,
-    title: `Tonic`,
-    info: [`CANOPY`, `Back End Dev`, `2019`],
-    featured_img: `./images/img1.svg`,
+    id: 'project1',
+    title: 'Tonic',
+    info: ['CANOPY', 'Back End Dev', '2019'],
+    featured_img: './images/img1.svg',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     more_description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum, nobis!',
-    technologies: [`html`, `css`, `javascript`],
-    source_link: `https://github.com/tahseenzahra/microverse-template-portfolio`,
-    version_link: `https://tahseenzahra.github.io/microverse-template-portfolio/`
+    technologies: ['html', 'css', 'javascript'],
+    source_link: 'https://github.com/tahseenzahra/microverse-template-portfolio',
+    version_link: 'https://tahseenzahra.github.io/microverse-template-portfolio/',
   },
   {
-    id: `project2`,
-    title: `Tonic`,
-    info: [`CANOPY`, `Back End Dev`, `2020`],
-    featured_img: `./images/img2.svg`,
+    id: 'project2',
+    title: 'Tonic',
+    info: ['CANOPY', 'Back End Dev', '2020'],
+    featured_img: './images/img2.svg',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     more_description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum, nobis!',
-    technologies: [`html`, `css`, `javascript`],
-    source_link: `https://github.com/tahseenzahra/microverse-template-portfolio`,
-    version_link: `https://tahseenzahra.github.io/microverse-template-portfolio/`
+    technologies: ['html', 'css', 'javascript'],
+    source_link: 'https://github.com/tahseenzahra/microverse-template-portfolio',
+    version_link: 'https://tahseenzahra.github.io/microverse-template-portfolio/',
   },
   {
-    id: `project3`,
-    title: `Tonic`,
-    info: [`CANOPY`, `Back End Dev`, `2021`],
-    featured_img: `./images/img3.svg`,
+    id: 'project3',
+    title: 'Tonic',
+    info: ['CANOPY', 'Back End Dev', '2021'],
+    featured_img: './images/img3.svg',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     more_description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum, nobis!',
-    technologies: [`html`, `css`, `javascript`],
-    source_link: `https://github.com/tahseenzahra/microverse-template-portfolio`,
-    version_link: `https://tahseenzahra.github.io/microverse-template-portfolio/`
+    technologies: ['html', 'css', 'javascript'],
+    source_link: 'https://github.com/tahseenzahra/microverse-template-portfolio',
+    version_link: 'https://tahseenzahra.github.io/microverse-template-portfolio/',
   },
   {
-    id: `project4`,
-    title: `Tonic`,
-    info: [`CANOPY`, `Back End Dev`, `2022`],
-    featured_img: `./images/img4.svg`,
+    id: 'project4',
+    title: 'Tonic',
+    info: ['CANOPY', 'Back End Dev', '2022'],
+    featured_img: './images/img4.svg',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     more_description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum, nobis!',
-    technologies: [`html`, `css`, `javascript`],
-    source_link: `https://github.com/tahseenzahra/microverse-template-portfolio`,
-    version_link: `https://tahseenzahra.github.io/microverse-template-portfolio/`
+    technologies: ['html', 'css', 'javascript'],
+    source_link: 'https://github.com/tahseenzahra/microverse-template-portfolio',
+    version_link: 'https://tahseenzahra.github.io/microverse-template-portfolio/',
   },
-]
+];
 // Project detail popup Data *end
 
-// function to get string to match id value from see Project BTN
-const detailPopup = document.getElementById('popup-1');
-function popup(string) {
-  detailPopup.style.display = 'block';
-  const index = found(string);
-}
-
-// function to get index i value from see project btn id
-let arrindex = [];
-function found(input) {
-
-  for (let i = 0; i < projectsDetail.length; i += 1) {
-    if (projectsDetail[i].id === input) {
-      arrindex.push(i);
-      getData(i);
-
-      return i;      
-    }
-  }
-  return null;
-}
-console.log('i am after the outside function')
-console.log('outside the found here is value of i', arrindex);
+const arrindex = [];
 
 const prjtitle = document.querySelector('#proj-title-id');
-const prjinfo = document.querySelector('#proj-about-id');
+
+// const prjinfo = document.querySelector('#proj-about-id');
 const prjname = document.querySelector('#proj-name-id');
 const prjtype = document.querySelector('#proj-type-id');
 const prjyear = document.querySelector('#proj-year-id');
@@ -101,11 +80,6 @@ const prjdescription = document.querySelector('#proj-primarytxt-id');
 const prjtechnologies = document.querySelector('#tech-list-id');
 const prjSrcbtn = document.querySelector('#sourcebtn-id');
 const prjLivebtn = document.querySelector('#livebtn-id');
-
-const popupclosebtn = document.querySelector('#x-icon-popup-id');
-popupclosebtn.addEventListener('click', () => {
-  detailPopup.style.display = 'none';
-});
 
 // Function GetData for detail project popup * start
 
@@ -125,12 +99,39 @@ function getData(i) {
   do {
     const technology = document.createElement('li');
     technology.textContent = projectsDetail[arrindex].technologies[j];
-    
+
     // technology.className = 'popup-tech-list-li';
     prjtechnologies.appendChild(technology);
     j += 1;
   } while (j < projectsDetail[i].technologies.length);
 
   prjSrcbtn.href = projectsDetail[i].source_link;
-  prjLivebtn.href = projectsDetail[i].version_link
+  prjLivebtn.href = projectsDetail[i].version_link;
 }
+
+// function to get index i value from see project btn id
+
+function found(input) {
+  for (let i = 0; i < projectsDetail.length; i += 1) {
+    if (projectsDetail[i].id === input) {
+      arrindex.push(i);
+      getData(i);
+
+      return i;
+    }
+  }
+  return null;
+}
+
+// function to get string to match id value from see Project BTN
+const detailPopup = document.getElementById('popup-1');
+function popup(string) {
+  detailPopup.style.display = 'block';
+  found(string);
+}
+popup();
+
+const popupclosebtn = document.querySelector('#x-icon-popup-id');
+popupclosebtn.addEventListener('click', () => {
+  detailPopup.style.display = 'none';
+});

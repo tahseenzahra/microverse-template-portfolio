@@ -558,9 +558,7 @@ img:hover {
 
   .popup-detailCard {
     position: absolute;
-    /* display: none; */
     flex-direction: column;
-    /* box-sizing: border-box; */
     height: max-content;
     margin: 16px 16px 0 16px;
     top: 0;
@@ -569,9 +567,6 @@ img:hover {
     bottom: 0;
     z-index: 3;
     padding: 16px;
-    /* background: white; */
-    /* border: 1px solid #dfe1e6; */
-    /* border-radius: 16px; */
   }
 
   /* Mocile media query ENDS here */
@@ -687,8 +682,8 @@ img:hover {
     grid-template-columns: calc(60%) calc(40%);
     grid-template-rows: calc(10%) calc(90%);
     grid-template-areas:
-    "popuptxt popuplist"
-    "popuptxt popupbtn";
+      "popuptxt popuplist"
+      "popuptxt popupbtn";
     gap: 10px;
     margin: 10px 42px;
   }
@@ -718,12 +713,6 @@ img:hover {
   }
 
   .popup-detailCard {
-    /* position: absolute;
-    left: 10%;
-    right: 10%;
-    top: auto;
-    bottom: auto; */
-    /* position: absolute; */
     flex-direction: column;
     box-sizing: border-box;
     margin: 16px auto 50px auto;
@@ -733,9 +722,6 @@ img:hover {
     bottom: 0;
     z-index: 3;
     padding: 16px;
-    /* background: white; */
-    /* border: 1px solid #dfe1e6; */
-    /* border-radius: 16px; */
     max-width: 1156px;
   }
 
@@ -752,11 +738,7 @@ img:hover {
 .project-popupbg {
   display: none;
   background: rgba(53, 72, 241, 0.4);
-  /* top: 0;
-  right: 0;
-  height: 100vh; */
   backdrop-filter: blur(7px);
-  /* width: 100%; */
   width: 100%;
   height: 100%;
   top: 0;
@@ -767,7 +749,6 @@ img:hover {
   z-index: 2;
 
   /* mix-blend-mode: multiply; */
-  backdrop-filter: blur(7px);
 }
 
 .popup-tech-list-ul {
@@ -798,7 +779,6 @@ img:hover {
 .popup-detailCard {
   display: flex;
   gap: 20px;
-  /* margin: 5%; */
   align-content: center;
   justify-content: center;
   box-sizing: content-box;
