@@ -540,8 +540,8 @@ img:hover {
 
   .popup-detailImg {
     max-height: max-content;
-    height: 273px;
-    width: 378px;
+    height: 40%;
+    width: 90%;
     align-self: center;
   }
 
@@ -696,13 +696,21 @@ img:hover {
     align-self: center;
   }
 
+  .popup-detailCard {
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    top: auto;
+    bottom: auto;
+  }
+
   /* Media query for desktop ENDS here */
 }
 
 /* Detail popup section bg */
 
 .project-popupbg {
-  display: none;
+  display: flex;
   background: rgba(53, 72, 241, 0.4);
   top: 0;
   right: 0;
@@ -710,6 +718,7 @@ img:hover {
   backdrop-filter: blur(7px);
   width: 100%;
   position: fixed;
+
 }
 
 .popup-tech-list-ul {
