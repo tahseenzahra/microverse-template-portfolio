@@ -591,6 +591,16 @@ img:hover {
     grid-row: 2;
   }
 
+  .popup-detailImg {
+    grid-row-start: 3;
+    grid-row-end: span 4;
+  }
+
+  .popup-txtarea {
+    grid-row-start: 7;
+    grid-row-end: span 5;
+  }
+
   /* Mobile media query ENDS here */
 }
 
