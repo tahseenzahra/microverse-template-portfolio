@@ -552,8 +552,29 @@ img:hover {
   }
 
   .prj-popup-header > .x-icon {
-    top: 35px;
+    top: 0%;
+    padding: 5%;
   }
+
+  .popup-detailCard {
+    position: absolute;
+    /* display: none; */
+    flex-direction: column;
+    /* box-sizing: border-box; */
+    height: max-content;
+    margin: 16px 16px 0 16px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+    padding: 16px;
+    /* background: white; */
+    /* border: 1px solid #dfe1e6; */
+    /* border-radius: 16px; */
+  }
+
+  /* Mocile media query ENDS here */
 }
 
 @media not screen and (max-width: 767px) {
@@ -686,22 +707,41 @@ img:hover {
 
   .prj-popup-header > .x-icon {
     top: 40px;
-    padding-right: 54px;
+    padding-right: 8%;
   }
 
   .popup-detailImg {
     /* max-height: max-content; */
-    height: 373px;
-    width: 478px;
+    height: 40%;
+    width: 90%;
     align-self: center;
   }
 
   .popup-detailCard {
-    position: absolute;
+    /* position: absolute;
     left: 10%;
     right: 10%;
     top: auto;
-    bottom: auto;
+    bottom: auto; */
+    /* position: absolute; */
+    flex-direction: column;
+    box-sizing: border-box;
+    margin: 16px auto 50px auto;
+    height: max-content;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+    padding: 16px;
+    /* background: white; */
+    /* border: 1px solid #dfe1e6; */
+    /* border-radius: 16px; */
+    max-width: 1156px;
+  }
+
+  #sourcebtn-id,
+  #livebtn-id {
+    box-sizing: content-box;
   }
 
   /* Media query for desktop ENDS here */
@@ -710,15 +750,24 @@ img:hover {
 /* Detail popup section bg */
 
 .project-popupbg {
-  display: flex;
+  display: none;
   background: rgba(53, 72, 241, 0.4);
-  top: 0;
+  /* top: 0;
   right: 0;
-  height: 100vh;
+  height: 100vh; */
   backdrop-filter: blur(7px);
+  /* width: 100%; */
   width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   position: fixed;
+  z-index: 2;
 
+  /* mix-blend-mode: multiply; */
+  backdrop-filter: blur(7px);
 }
 
 .popup-tech-list-ul {
@@ -749,7 +798,7 @@ img:hover {
 .popup-detailCard {
   display: flex;
   gap: 20px;
-  margin: 5%;
+  /* margin: 5%; */
   align-content: center;
   justify-content: center;
   box-sizing: content-box;
@@ -761,4 +810,9 @@ img:hover {
 
 .prj-popup-header {
   display: flex;
+}
+
+#sourcebtn-id,
+#livebtn-id {
+  width: fit-content;
 }
