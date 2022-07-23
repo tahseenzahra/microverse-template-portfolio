@@ -540,6 +540,9 @@ img:hover {
 
   .popup-detailImg {
     max-height: max-content;
+    grid-row-start: 7;
+    grid-row-end: span 5;
+
     /* height: 40%;
     width: 90%; */
     align-self: center;
@@ -549,6 +552,8 @@ img:hover {
     display: flex;
     flex-direction: column;
     gap: 15px;
+    grid-row-start: 3;
+    grid-row-end: span 4;
   }
 
   .prj-popup-header > .x-icon {
@@ -558,11 +563,14 @@ img:hover {
 
   .popup-detailCard {
     position: absolute;
+
     /* flex-direction: column; */
     height: max-content;
     width: min-content;
+
     /* width: 50%; */
     margin: 10px;
+
     /* margin: 16px 16px 0 16px; */
     top: 25px;
     left: 0;
@@ -570,7 +578,6 @@ img:hover {
     bottom: 0;
     z-index: 3;
     padding: 16px;
-
     display: grid;
     grid-template-rows: repeat(12, 1fr);
     gap: 12px;
@@ -582,16 +589,6 @@ img:hover {
 
   #proj-about-id {
     grid-row: 2;
-  }
-
-  .popup-detailImg {
-    grid-row-start: 3;
-    grid-row-end: span 4;
-  }
-
-  .popup-txtarea {
-    grid-row-start: 7;
-    grid-row-end: span 5;
   }
 
   /* Mobile media query ENDS here */
@@ -775,6 +772,7 @@ img:hover {
   box-sizing: content-box;
   padding: 34px;
   overflow: scroll;
+
   /* mix-blend-mode: multiply; */
 }
 
