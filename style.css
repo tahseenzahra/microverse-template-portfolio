@@ -540,8 +540,8 @@ img:hover {
 
   .popup-detailImg {
     max-height: max-content;
-    height: 40%;
-    width: 90%;
+    /* height: 40%;
+    width: 90%; */
     align-self: center;
   }
 
@@ -558,18 +558,43 @@ img:hover {
 
   .popup-detailCard {
     position: absolute;
-    flex-direction: column;
+    /* flex-direction: column; */
     height: max-content;
-    margin: 16px 16px 0 16px;
-    top: 0;
+    width: min-content;
+    /* width: 50%; */
+    margin: 10px;
+    /* margin: 16px 16px 0 16px; */
+    top: 25px;
     left: 0;
     right: 0;
     bottom: 0;
     z-index: 3;
     padding: 16px;
+
+    display: grid;
+    grid-template-rows: repeat(12, 1fr);
+    gap: 12px;
   }
 
-  /* Mocile media query ENDS here */
+  .prj-popup-header {
+    grid-row: 1;
+  }
+
+  #proj-about-id {
+    grid-row: 2;
+  }
+
+  .popup-detailImg {
+    grid-row-start: 3;
+    grid-row-end: span 4;
+  }
+
+  .popup-txtarea {
+    grid-row-start: 7;
+    grid-row-end: span 5;
+  }
+
+  /* Mobile media query ENDS here */
 }
 
 @media not screen and (max-width: 767px) {
@@ -735,10 +760,6 @@ img:hover {
 
 /* Detail popup section bg */
 
-#popup-1 {
-  display: none;
-}
-
 .project-popupbg {
   display: none;
   background: rgba(53, 72, 241, 0.4);
@@ -751,7 +772,9 @@ img:hover {
   bottom: 0;
   position: fixed;
   z-index: 2;
-
+  box-sizing: content-box;
+  padding: 34px;
+  overflow: scroll;
   /* mix-blend-mode: multiply; */
 }
 
@@ -780,13 +803,13 @@ img:hover {
   gap: 24px;
 }
 
-.popup-detailCard {
+/* .popup-detailCard {
   display: flex;
   gap: 20px;
   align-content: center;
   justify-content: center;
   box-sizing: content-box;
-}
+} */
 
 .prj-popup-header > .x-icon {
   color: #67798e;
@@ -799,4 +822,21 @@ img:hover {
 #sourcebtn-id,
 #livebtn-id {
   width: fit-content;
+}
+
+/* .popup-detailCard */
+.popup-detailCard::-webkit-scrollbar {
+  width: 2em;
+}
+
+.popup-detailCard::-webkit-scrollbar-track {
+  background: hsl(120 75% 50% / 1);
+  border-radius: 100vw;
+  margin-block: 0.5em;
+}
+
+.popup-detailCard::-webkit-scrollbar-thumb {
+  background: hsl(120 100% 20% / 1);
+  border: 0.25em solid hsl(120 75% 50% / 1);
+  border-radius: 100vw;
 }
