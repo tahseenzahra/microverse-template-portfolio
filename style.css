@@ -540,8 +540,6 @@ img:hover {
 
   .popup-detailImg {
     max-height: max-content;
-    grid-row-start: 7;
-    grid-row-end: span 5;
 
     /* height: 40%;
     width: 90%; */
@@ -552,8 +550,6 @@ img:hover {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    grid-row-start: 3;
-    grid-row-end: span 4;
   }
 
   .prj-popup-header > .x-icon {
@@ -591,12 +587,12 @@ img:hover {
     grid-row: 2;
   }
 
-  .popup-detailImg {
+  #img-id {
     grid-row-start: 3;
     grid-row-end: span 4;
   }
 
-  .popup-txtarea {
+  #popup-txtarea-id {
     grid-row-start: 7;
     grid-row-end: span 5;
   }
