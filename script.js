@@ -131,11 +131,11 @@ function popup(string) {
 }
 
 const seeProjectButtons = document.querySelectorAll('.see-project-button');
-seeProjectButtons.forEach((element)=>{
-  element.addEventListener('click', (event)=>{
+seeProjectButtons.forEach((element) => {
+  element.addEventListener('click', (event) => {
     popup(event.target.id);
-  })
-})
+  });
+});
 
 const popupclosebtn = document.querySelector('#x-icon-popup-id');
 popupclosebtn.addEventListener('click', () => {
