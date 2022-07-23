@@ -735,6 +735,10 @@ img:hover {
 
 /* Detail popup section bg */
 
+#popup-1 {
+  display: none;
+}
+
 .project-popupbg {
   display: none;
   background: rgba(53, 72, 241, 0.4);
