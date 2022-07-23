@@ -129,7 +129,13 @@ function popup(string) {
   detailPopup.style.display = 'block';
   found(string);
 }
-popup();
+
+const seeProjectButtons = document.querySelectorAll('.see-project-button');
+seeProjectButtons.forEach((element)=>{
+  element.addEventListener('click', (event)=>{
+    popup(event.target.id);
+  })
+})
 
 const popupclosebtn = document.querySelector('#x-icon-popup-id');
 popupclosebtn.addEventListener('click', () => {
