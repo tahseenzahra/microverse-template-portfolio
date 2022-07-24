@@ -150,17 +150,15 @@ const inputs = document.querySelectorAll('#form #user-email');
 
 inputs.forEach((input) => {
   input.addEventListener('keyup', () => {
-    const uppercase = email.value.replace(/[^A-Z]/g,'');
-  if (uppercase.length > 0) {
-    document.getElementById('email-alert-id').innerHTML = "Don't use capital letters in the email.";
-    document.getElementById('user-email').classList.add('red-input');
-    console.log('i am inside if form')
-  }
-  else {
-    document.getElementById('user-email').classList.remove('red-input');
-    document.getElementById('email-alert-id').innerHTML = '';
-  }
-  });  
+    const uppercase = email.value.replace(/[^A-Z]/g, '');
+    if (uppercase.length > 0) {
+      document.getElementById('email-alert-id').innerHTML = "Don't use capital letters in the email.";
+      document.getElementById('user-email').classList.add('red-input');
+    } else {
+      document.getElementById('user-email').classList.remove('red-input');
+      document.getElementById('email-alert-id').innerHTML = '';
+    }
+  });
 });
 
 form.addEventListener('submit', (e) => {
