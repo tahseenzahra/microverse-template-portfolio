@@ -146,11 +146,11 @@ popupclosebtn.addEventListener('click', () => {
 
 const form = document.querySelector('#form');
 const email = document.querySelector('#user-email');
-const inputs = document.querySelectorAll('#contact #user-email');
+const inputs = document.querySelectorAll('#form #user-email');
 
 inputs.forEach((input) => {
   input.addEventListener('keyup', () => {
-    const uppercase = email.value.replace(/[^A-Z]/g, '');
+    const uppercase = email.value.replace(/[^A-Z]/g,'');
   if (uppercase.length > 0) {
     document.getElementById('email-alert-id').innerHTML = "Don't use capital letters in the email.";
     document.getElementById('user-email').classList.add('red-input');

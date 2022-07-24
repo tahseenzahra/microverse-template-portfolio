@@ -846,7 +846,8 @@ img:hover {
 }
 
 .email-alert {
-  color: red;
+  color: rgb(131, 9, 9);
+  font-weight: bold;
 }
 
 .red-input {
